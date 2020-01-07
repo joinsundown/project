@@ -15,14 +15,7 @@ const routes: Routes = [
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
   },
-  {
-    path: 'loginadmin',
-    loadChildren: () => import('./loginadmin/loginadmin.module').then( m => m.LoginadminPageModule)
-  },
-  {
-    path: 'loginuser',
-    loadChildren: () => import('./loginuser/loginuser.module').then( m => m.LoginuserPageModule)
-  },
+
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
